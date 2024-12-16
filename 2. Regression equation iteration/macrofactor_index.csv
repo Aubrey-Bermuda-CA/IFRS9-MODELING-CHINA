@@ -1,0 +1,26 @@
+factor_name,group
+GDP_Const_Qtr,Production and Industry
+Ind_Pro_Mth,Production and Industry
+CPI_Mth,Price Level
+Core_CPI_Mth,Price Level
+PPI_Mth,Price Level
+FAI_Cum,Investment and Infrastructure
+Retail_Sales_Mth,Consumption and Retail
+Imports_Mth,Trade and Imports/Exports
+Exports_Mth,Trade and Imports/Exports
+M1,Monetary Policy
+M2,Monetary Policy
+Loans_RMB,Monetary Policy
+Social_Financing,Monetary Policy
+Manuf_PMI,Production and Industry
+Ind_Revenue_Cum,Production and Industry
+PPIRM_Mth,Price Level
+CGPI_Mth,Price Level
+70_Cities_Price_Mth,Investment and Infrastructure
+Power_Gen_Mth,Production and Industry
+Freight_Mth,Production and Industry
+Urban_Income_Cum,Consumption and Retail
+Urban_Exp_Cum,Consumption and Retail
+Nat_Housing_Index,Investment and Infrastructure
+Macro_Eco_Index,0
+Housing_Sales_Cum,Consumption and Retail

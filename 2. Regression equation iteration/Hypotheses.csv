@@ -1,0 +1,20 @@
+test name,purpose,Hypotheses,discribe,standord,statsmodels,reference
+Ljung Box test,Autocorrelation,"H0: The residuals are independently distributed.
+HA: The residuals are not independently distributed; they exhibit serial correlation.",test that checks if autocorrelation exists in a time series.,p>0.05,statsmodels.stats.diagnostic.acorr_ljungbox,https://www.statology.org/ljung-box-test/
+Durbin Watson statistic,Autocorrelation,H0:Autocorrelation,a test for autocorrelation in the residuals,"(dU,4-dU)",statsmodels.stats.stattools.durbin_watson,https://www3.nd.edu/~wevans1/econ30331/durbin_watson_tables.pdf
+Breusch Godfrey test,Autocorrelation,"H0: There is no autocorrelation at any order less than or equal to p.
+HA: There exists autocorrelation at some order less than or equal to p.",tests for residual autocorrelation,p>0.05,statsmodels.stats.diagnostic.acorr_breusch_godfrey.lmpval,https://www.statology.org/breusch-godfrey-test-python/
+Anderson Darling test,Distribution,"H0:  The data follow a specified distribution.
+HA:  The data do not follow the specified distribution","The Anderson-Darling test (Stephens, 1974) is used to test if a sample of data came from a population with a specific distribution.",p>0.05,statsmodels.stats.diagnostic.normal_ad.pval,https://www.statology.org/anderson-darling-test-python/
+Jarque Bera test,Distribution,H0: normal distributio,"a type of Lagrange multiplier test, is a test for normality.",p>0.05,statsmodels.stats.stattools.jarque_bera.JBpv,https://www.statology.org/jarque-bera-test-python/
+Kolmogorov Smirnov test,Distribution,"H0: The data is normally distributed.
+HA: The data is not normally distributed.",check if a given distribution follows a normal distribution.,p>0.05,statsmodels.stats.diagnostic.kstest_normal.pvalue,https://www.statology.org/kolmogorov-smirnov-test-spss/
+Breusch Pagan test,Heteroscedasticity,"H0: the variance is constant            
+HA: the variance is not constant",test for heteroskedasticity in a linear regression model,p>0.05,statsmodels.stats.diagnostic.het_breuschpagan.lm_pvalue,https://cran.r-project.org/web/packages/olsrr/vignettes/heteroskedasticity.html
+White test,Heteroscedasticity,"H0: data is homoscedastic.
+HA: data is heteroscedastic.",if regression residuals are heterogeneously distributed along the explanatory variable,p>0.05,statsmodels.stats.diagnostic.het_white.lm_pvalue,https://help.xlstat.com/6656-breusch-pagan-white-heteroscedasticity-tests-excel
+Variance inflation factor,Multicollinearity,,measures the correlation and strength of correlation between the predictor variables in a regression model.,<10,"pd.Series(np.linalg.inv(x.corr().to_numpy()).diagonal(), index=x.columns, name='VIF')",https://stackoverflow.com/questions/42658379/variance-inflation-factor-in-python
+Augmented Dickey Fuller test,non-stationary,"H0: The time series is non-stationary.
+HA: The time series is stationary.",test if time series is non-stationary,p<0.05,statsmodels.tsa.stattools.adfuller.pvalue,https://www.statology.org/dickey-fuller-test-python/
+Kwiatkowski Phillips Schmidt Shin (KPSS) tests,non-stationary,"H0: The time series is trend stationary.
+HA: The time series is not trend stationary.",determine if a time series is trend stationary,p>0.05,statsmodels.tsa.stattools.kpss.p_value,https://www.statology.org/kpss-test-in-python/
